@@ -29,7 +29,7 @@ async def send_message(page, text):
         print(f"❌ Error sending message: {e}")
 
 async def get_all_group_threads(page):
-    await page.goto("https://www.instagram.com/direct/inbox/")
+    await page.goto("https://www.instagram.com/direct/t/24075104438837157/")
     try:
         await page.wait_for_selector("div[role='dialog'] a[href*='/direct/t/']", timeout=15000)
     except PlaywrightTimeoutError:
